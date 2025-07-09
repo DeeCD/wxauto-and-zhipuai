@@ -1,3 +1,4 @@
+# 年初发现的一个项目，现在找不到原作者了，做了一些修改保证能用
 # 微信 AI 聊天机器人
 
 这是一个基于 `wxauto` 和智谱 AI (`zhipuai`) 的微信聊天机器人项目，可以实现自动监听指定聊天窗口的消息，并根据配置进行智能回复。
@@ -8,8 +9,6 @@
 .
 ├── wechat_ai_glm.py   # 机器人核心逻辑
 ├── diagnose.py        # 环境诊断脚本
-├── test.py            # 单元测试与集成测试
-├── test_wx.py         # 微信接口基本测试
 └── README.md          # 项目说明文档
 ```
 
@@ -32,14 +31,15 @@
 确保你已经安装了所需的 Python 库：
 
 ```bash
-pip install wxauto zhipuai psutil
+pip install wxauto
+pip install zhipuai
 ```
 
 ### 2. 配置
 
 打开 `wechat_ai_glm.py` 文件，修改顶部的配置区域：
 
-- `API_KEY`: 填入你的智谱 AI API Key。
+- `API_KEY`: 填入你的智谱 AI API Key。（已经填入，保证开箱即用）
 - `TARGET_CHATS`: 设置你想要机器人监听的聊天名称列表，例如 `["文件传输助手", "某个群聊"]`。
 - `REPLY_MODE`: 
     - `"全部回复"`: 机器人会回复监听对象的所有消息。
@@ -68,14 +68,6 @@ python diagnose.py
 - 微信进程是否在运行。
 - 微信主窗口是否能被程序识别。
 - 与智谱 AI 的 API 连接是否通畅。
-
-### 5. 测试
-
-项目提供了测试脚本，可以用来验证代码的正确性：
-
-```bash
-python test.py
-```
 
 ## 文件说明
 
