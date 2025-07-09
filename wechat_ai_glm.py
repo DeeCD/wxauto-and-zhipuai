@@ -8,7 +8,7 @@ from typing import List, Dict
 
 # ​******************** 配置区域 ​********************
 API_KEY = "1734b4fcea4d4a7fbb330d67034cee3c.KSsMmYEDAMSNElHt"
-TARGET_CHATS = ["文件传输助手", "620董事会","晴空万里"]
+TARGET_CHATS = ["文件传输助手", "指定群聊"]
 REPLY_MODE = "全部回复"  # 可选："全部回复" 或 "@回复"
 MODEL_NAME = "glm-z1-flash"  # 必须包含日期后缀[1](@ref)
 # ​************************************************
