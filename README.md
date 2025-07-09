@@ -10,6 +10,7 @@
 .
 ├── wechat_ai_glm.py   # 机器人核心逻辑
 ├── diagnose.py        # 环境诊断脚本
+├── run.bat            #运行脚本
 └── README.md          # 项目说明文档
 ```
 
