@@ -75,5 +75,3 @@ python diagnose.py
 
 - **`wechat_ai_glm.py`**: 核心文件。包含了 `ZhipuAIClient` 类用于与 AI 模型交互，以及 `WeChatAIBot` 类用于处理微信消息的监听、解析和发送。
 - **`diagnose.py`**: 一个独立的工具，用于帮助用户快速定位环境问题，例如微信未启动或网络问题。
-- **`test.py`**: 使用 `unittest` 框架编写的测试文件，覆盖了机器人的主要功能，包括初始化、消息处理和回复逻辑。
-- **`test_wx.py`**: 一个简单的脚本，用于快速测试 `wxauto` 是否能正常获取微信信息。
